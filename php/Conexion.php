@@ -2,7 +2,7 @@
 class Conexion extends SQLite3 {
 	/*
 	 * CLASE CONEXION
-	 * Mayo 2016
+	 * Mayo 2016 Febrero 2018
 	 * R_Martinez_B
 	 */
 	const USUARIO = 'u117335376_root';
