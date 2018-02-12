@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<flash_parameters copyright="socusoftFSMTheme">
+    <preferences>
+        <global>
+            <basic_property html_title="Escuela Preparatoria José Ma. Morelos" loadStyle="Pie" hideAdobeMenu="true" photoDynamicShow="true" socusoftMenu="false" enableURL="false" interfacetext="Galería"/>
+            <music_property path="" stream="true" loop="true"/>
+            <description_property enable="true" backgroundColor="" backgroundAlpha="20" cssText="a:link{text-decoration: underline;} a:hover{color:#ff0000; text-decoration: none;} a:active{color:#0000ff;text-decoration: none;} .blue {color:#0000ff; font-size:15px; font-style:italic; text-decoration: underline;} .body{color:#ff5500;font-size:20px;}" align="top"/>
+            <background_property backgroundColor="0xc0c0c0" mode="tile"/>
+        </global>
+        <photo>
+            <basic_property PhotoMaxWidth="800" PhotoMaxHeight="600" photoBackColor="0x591900" photopadding="60" photoborder="8" EnablephotoTitle="true" photoTitleColor="0xfffbf0" photoButtonColor="0xfffbf0"/>
+        </photo>
+        <thumbnail>
+            <basic_property thumWidth="200" thumHeight="160" thumbnailborderColor="0x000048" thumbnailTextColor="0x000000" thumborder="6" thumsradius="369" defaultscale="60" thumscaleStyle="top"/>
+            <button_property buttoncolor="0x000080"/>
+        </thumbnail>
+    </preferences>
+    <album>
+        <slide jpegURL="thumbs/t_0001.jpg" d_URL="slides/p_0001.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Biblioteca (2)" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0002.jpg" d_URL="slides/p_0002.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Biblioteca (3)" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0003.jpg" d_URL="slides/p_0003.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Biblioteca (4)" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0004.jpg" d_URL="slides/p_0004.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Biblioteca" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0005.jpg" d_URL="slides/p_0005.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Cancha deportiva" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0006.jpg" d_URL="slides/p_0006.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Cancha" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0007.jpg" d_URL="slides/p_0007.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Centro de cómputo (2)" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0008.jpg" d_URL="slides/p_0008.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Centro de cómputo (3)" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0009.jpg" d_URL="slides/p_0009.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Centro de cómputo" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0010.jpg" d_URL="slides/p_0010.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Control Escolar (2)" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0011.jpg" d_URL="slides/p_0011.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Control Escolar" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0012.jpg" d_URL="slides/p_0012.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Dirección" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0013.jpg" d_URL="slides/p_0013.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="images_ (19)" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0014.jpg" d_URL="slides/p_0014.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Laboratorio (2)" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0015.jpg" d_URL="slides/p_0015.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Laboratorio (3)" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0016.jpg" d_URL="slides/p_0016.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Laboratorio" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0017.jpg" d_URL="slides/p_0017.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Recursos Humanos" width="800" height="450"/>
+        <slide jpegURL="thumbs/t_0018.jpg" d_URL="slides/p_0018.jpg" transition="0" panzoom="1" URLTarget="0" phototime="2" url="http://www.flash-slideshow-maker.com" title="Trabajo Social" width="800" height="450"/>
+    </album>
+</flash_parameters>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galeria</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="../lib/jquery-1.10.1.min.js"></script>
+   
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="../lib/jquery.mousewheel-3.0.6.pack.js"></script>
+      <!--JQUERY UI-->
+    <link rel="stylesheet" href="../../../js/jquery-ui/development-bundle/themes/base/jquery.ui.all.css">
+	<script src="../../../js/jquery-ui/development-bundle/jquery-1.6.2.js"></script>
+	<script src="../../../js/jquery-ui/development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="../../../js/jquery-ui/development-bundle/ui/jquery.ui.mouse.js"></script>
+	<script src="../../../js/jquery-ui/development-bundle/ui/jquery.ui.slider.js"></script>
+	<link rel="stylesheet" href="../../../js/jquery-ui/development-bundle/demos/demos.css">
+    <!---->
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    
+    <link rel="stylesheet" href="../../../style.css" media="screen">
+    <link rel="stylesheet" href="../../../style.responsive.css" media="all">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif&amp;subset=latin">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../../js/animate.min.css">
+    <script type="text/javascript" src='../../../js/scroll_bottom.js'> </script>
+
+
+	<script type="text/javascript">
+	   function animar(id,animacion){
+	   	var divAnimado=document.getElementById(id);
+	   	divAnimado.className=animacion;
+	   }
+	   function desanimar(id){
+	   	var divAnimado=document.getElementById(id);
+	   	divAnimado.className="highlight";
+	   }
+
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			$("#inicio").eq(0).trigger('click');
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '../../../images/images_ (30).jpg',
+						title : 'Trabajo social'
+					},{
+                        href : '../../../images/images_ (28).jpg',
+						title : 'Cancha'
+					},{
+                        href : '../../../images/images_ (27).jpg',
+						title : 'Centro de computacion'
+					},{
+                        href : '../../../images/images_ (26).jpg',
+						title : 'Biblioteca'
+					},{
+                        href : '../../../images/images_ (24).jpg',
+						title : 'Biblioteca'
+					},{
+                        href : '../../../images/images_ (23).jpg',
+						title : 'Control escolar'
+					},{
+						href : '../../../images/img.jpg',
+						title : 'Entrada'
+					},{
+						href : '../../../images/images_ (19).jpg',
+						title : ''
+					},{
+						href : '../../../images/images_ (17).jpg',
+						title : 'Prefectura'
+					},{
+                        href : '../../../images/images_ (16).jpg',
+						title : 'Biblioteca'
+					},{
+						href : '../../../images/images_ (15).jpg',
+						title : 'Direccion'
+					},{
+						href : '../../../images/images_ (14).jpg',
+						title : 'Recursos humanos'
+					},{
+						href : '../../../images/images_ (13).jpg',
+						title : 'Laboratorio'
+					},{
+                        href : '../../../images/images_ (12).jpg',
+						title : ''
+					},{
+						href : '../../../images/images_ (9).jpg',
+						title : 'Trabajo Social'
+					},{
+						href : '../../../images/images_ (8).jpg',
+						title : 'Laboratorio'
+					},{
+						href : '../../../images/images_ (7).jpg',
+						title : 'Biblioteca'
+					},{
+                        href : '../../../images/images_ (6).jpg',
+						title : 'Cancha'
+					},{
+						href : '../../../images/images_ (5).jpg',
+						title : 'Control escolar'
+					},{
+						href : '../../../images/images_ (4).jpg',
+						title : 'Laboratorio'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	
+	
+	<script>
+	$(function() {
+		//scrollpane parts
+		var scrollPane = $( ".scroll-pane" ),
+			scrollContent = $( ".scroll-content" );
+		
+		//build slider
+		var scrollbar = $( ".scroll-bar" ).slider({
+			slide: function( event, ui ) {
+				if ( scrollContent.width() > scrollPane.width() ) {
+					scrollContent.css( "margin-left", Math.round(
+						ui.value / 100 * ( scrollPane.width() - scrollContent.width() )
+					) + "px" );
+				} else {
+					scrollContent.css( "margin-left", 0 );
+				}
+			}
+		});
+		
+		//append icon to handle
+		var handleHelper = scrollbar.find( ".ui-slider-handle" )
+		.mousedown(function() {
+			scrollbar.width( handleHelper.width() );
+		})
+		.mouseup(function() {
+			scrollbar.width( "100%" );
+		})
+		.append( "<span class='ui-icon ui-icon-grip-dotted-vertical'></span>" )
+		.wrap( "<div class='ui-handle-helper-parent'></div>" ).parent();
+		
+		//change overflow to hidden now that slider handles the scrolling
+		scrollPane.css( "overflow", "hidden" );
+		
+		//size scrollbar and handle proportionally to scroll distance
+		function sizeScrollbar() {
+			var remainder = scrollContent.width() - scrollPane.width();
+			var proportion = remainder / scrollContent.width();
+			var handleSize = scrollPane.width() - ( proportion * scrollPane.width() );
+			scrollbar.find( ".ui-slider-handle" ).css({
+				width: handleSize,
+				"margin-left": -handleSize / 2
+			});
+			handleHelper.width( "" ).width( scrollbar.width() - handleSize );
+		}
+		
+		//reset slider value based on scroll content position
+		function resetValue() {
+			var remainder = scrollPane.width() - scrollContent.width();
+			var leftVal = scrollContent.css( "margin-left" ) === "auto" ? 0 :
+				parseInt( scrollContent.css( "margin-left" ) );
+			var percentage = Math.round( leftVal / remainder * 100 );
+			scrollbar.slider( "value", percentage );
+		}
+		
+		//if the slider is 100% and window gets larger, reveal content
+		function reflowContent() {
+				var showing = scrollContent.width() + parseInt( scrollContent.css( "margin-left" ), 10 );
+				var gap = scrollPane.width() - showing;
+				if ( gap > 0 ) {
+					scrollContent.css( "margin-left", parseInt( scrollContent.css( "margin-left" ), 10 ) + gap );
+				}
+		}
+		
+		//change handle position on window resize
+		$( window ).resize(function() {
+			resetValue();
+			sizeScrollbar();
+			reflowContent();
+		});
+		//init scrollbar size
+		setTimeout( sizeScrollbar, 10 );//safari wants a timeout
+	});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+		body {
+			
+			margin: 0 auto;
+			background:url(../../../images/morelos_opacity.png);background-repeat:no-repeat;background-atachment:fixed;
+			
+		}
+	</style>
+	<style>
+	#demo-frame > div.demo { padding: 10px !important; }
+	.scroll-pane { overflow: auto; width: 99%; float:left; }
+	.scroll-content { width: 2440px; float: left; }
+	.scroll-content-item { width: 100px; height: 100px; float: left; margin: 10px; font-size: 3em; line-height: 96px; text-align: center; }
+	* html .scroll-content-item { display: inline; } /* IE6 float double margin bug */
+	.scroll-bar-wrap { clear: left; padding: 0 4px 0 2px; margin: 0 -1px -1px -1px; }
+	.scroll-bar-wrap .ui-slider { background: none; border:0; height: 2em; margin: 0 auto;  }
+	.scroll-bar-wrap .ui-handle-helper-parent { position: relative; width: 100%; height: 100%; margin: 0 auto; }
+	.scroll-bar-wrap .ui-slider-handle { top:.2em; height: 1.5em; }
+	.scroll-bar-wrap .ui-slider-handle .ui-icon { margin: -8px auto 0; position: relative; top: 50%; }
+	</style>
+</head>
+<body>
+	
+	 <div class="art-postcontent art-postcontent-0 clearfix">
+	 	<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width: 100%" >
+        <p>
+         <div class='titulos'>
+         <span style="font-size: 16px; color:white;text-transform:uppercase;font-weigth:bold;">
+         Galer&iacute;a&nbsp;<img src="../../../images/iconos/picture-2.png" width="80" height="80"><br>
+         </span>
+       </div>
+       </p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+	<div style='display:none;'>
+	<ul><li><a id='inicio' class="fancybox fancybox.ajax" href="loading.html">Carga</a></li></ul>
+    </div>
+<!--SCROLL-->
+<br>
+<div class="demo">
+
+<div class="scroll-pane ui-widget ui-widget-header ui-corner-all">
+	<div class="scroll-content">
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (30).jpg" data-fancybox-group="gallery" >
+		<img src="../../../images/images_ (30).jpg" id='30' alt="" width=150 height=150 class='highlight' onclick='javascript:animar(this.id,"animated hinge");' onmouseover='javascript:desanimar(this.id);'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (28).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (28).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (27).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (27).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (26).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (26).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (24).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (24).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (22).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (22).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (21).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (21).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (19).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (19).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (18).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (18).jpg" alt="" width=150 height=150 class='highlight'> </a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (16).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (16).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (15).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (15).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (14).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (14).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (13).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (13).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (12.jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (12).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (9).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (9).jpg" alt="" width=150 height=150 class='highlight'> </a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (8).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (8).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (7).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (7).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (6).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (6).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (5).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (5).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		<div class="scroll-content-item ui-widget-header"><a class="fancybox" href="../../../images/images_ (4).jpg" data-fancybox-group="gallery" ><img src="../../../images/images_ (4).jpg" alt="" width=150 height=150 class='highlight'></a></div>
+		
+	</div>
+	<div class="scroll-bar-wrap ui-widget-content ui-corner-bottom">
+		<div class="scroll-bar"></div>
+	</div>
+</div>
+
+</div>
+<!-- End demo -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align='center'>
+<br><br><br><br><br>
+        
+		<br><br><br><br><br><br><br><br>
+		<a id="fancybox-manual-c" href="javascript:;" class='titulos' style='text-decoration:none;align:left;left:110px;'>Abrir galer&iacute;a</a>
+	    <a style='align:left;right:350px;' class='titulos' style='text-decoration:none;' onclick="alert('PARA ABRIR LA GALER&Iacute;A,SOLO DA CLIC EN EL BOTON O EN UNA DE LAS IMAGENES')">Informacion</a>
+	    
+	    <a href='../../../inicio.php' target='parent' class='titulos' style='text-decoration:none;align:left;left:110px;'>Regresar al inicio</a>
+	    
+
+<br>
+
+</div>
+
+	
+</body>
+</html>

@@ -1,0 +1,88 @@
+@CHARSET "ISO-8859-1";
+
+/*IOC
+*/
+	body {
+		margin-left:0px;
+		margin-top:0px;
+		margin-right:0px;
+		margin-bottom:0px;
+	}
+
+
+	.tablaDatos {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;		
+		color:#000033;
+		margin:0px;
+		background-color:#dddddd;
+		border:solid 1px;
+	}
+	.tablaDatosM {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;		
+		color:#000033;
+		margin:0px;
+		background-color:#dddddd;
+	}
+	.tablaDatosR {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;		
+		color:#FF0000;
+		margin:0px;
+		background-color:#dddddd;
+		border:solid 1px;
+	}
+	.tablaTitulos {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:9px;
+		font-weight:bold;
+		color:#000000;
+		margin:0px;
+		background-color:#dddddd;
+	}
+	.tablaTitulos2 {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:9px;
+		font-weight:bold;
+		color:#000000;
+		margin:0px;
+		background-color:#dddddd;
+		border:solid 1px;
+	}
+	.registro {
+		margin:0px;
+		text-align:center;
+		width:230px;
+		font-family:Arial, Helvetica, sans-serif;
+		padding-top:0px;
+		padding-right:10px;
+		padding-bottom:0;
+		padding-left:0;
+	}
+	.quitarMargenes {
+		margin:0px;
+		padding:0px;
+	}
+	.tituloAparente {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:20px;
+		font-weight:150;
+		color:#000e28;
+		padding-left:25px;
+		padding-top:15px;
+		padding-bottom:15px;
+	}
+	.loginbody {
+		background-color:#dddddd;
+		background-image:none;
+	}
+.Estilo1 {
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 20px; font-weight: bold; 
+color: #000e28; padding-left: 25px; 
+padding-top: 15px; padding-bottom: 15px; 
+}

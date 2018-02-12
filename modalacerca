@@ -1,0 +1,121 @@
+<!-- Modal Acerca de--> 
+<div class="modal fade" id="myMod1" tabindex="-1" role="dialog"  
+   aria-labelledby="myModalLabel" aria-hidden="true" > 
+   <div class="modal-dialog" style="background:url('../images/block.png')">       
+    <div class="modal-content"> 
+         <div class="modal-header" > 
+            <button type="button" class="close"  
+               data-dismiss="modal" aria-hidden="true"> 
+                  &times; 
+            </button> 
+            <h4 class="modal-title" id="myModalLabel"> 
+             <span style="line-height: 107%; font-family: 'Lucida Calligraphy'; color: rgb(91, 155, 213); font-size: 30px;">Acerca de</span>
+            </h4> 
+         </div> 
+         <div class="modal-body" style='background:url(../images/block.png)'> 
+         <h4 style='color:#000034;'><img src='images/logo-3.png' width='65' height='60'> 
+            Escuela preparatoria José Ma. Morelos de Zitácuaro,S.C</h4>
+            <hr><br>
+          <!--CONTENIDO ARTICLE-->
+          <article class="art-post art-article">
+                                
+    <div class="art-postcontent art-postcontent-0 clearfix">
+    <div class="art-content-layout layout-item-1">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 100%" >
+        <p class="MsoNormal"  style="text-align: center;">
+        <span style=" font-family: 'Lucida Calligraphy'; color: rgb(91, 155, 213); font-size: 36px;">Misión</span></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width: 100%" >
+        <p>
+            <span style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif; font-size: 14px;text-align:justify;">
+            Somos una Institución de Educación Integral de Nivel Medio Superior, donde el alumnado descubre sus potencialidades intelectuales y emocionales con un acompañamiento de calidez y calidad humana que le lleve a un nivel educativo superior con actitudes de triunfador.</span><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width: 100%" >
+       <!---MAIN-->
+       <!--MAIN-->
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width: 100%" >
+        <p><span style="color: rgb(91, 155, 213); font-family: 'Lucida Calligraphy'; line-height: 51px; text-align: left; font-size: 36px;">Visión</span><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width: 100%" >
+        <p><span style="text-align:justify;color: rgb(51, 51, 51); font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif; font-size: 14px;">
+            Ser la Mejor Preparatoria a nivel regional dotando al alumno de las herramientas necesarias para su superación profesional y humana con programas de calidad y personal capacitado.</span><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width: 100%" >
+        <p><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width: 100%" >
+        <p><span style="color: rgb(91, 155, 213); font-family: 'Lucida Calligraphy'; font-size: 36px; line-height: 51px; text-align: left;">Valores</span><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width: 100%;color:#000034;" >
+        <p><span style="text-align:justify;color:#000034; font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif; font-size: 14px;">
+            La preparatoria vive y encarna al interior de la misma y con pleno conocimiento y consenso de su comunidad, una conciencia axiológica de trascendencia y participación social, mediante los valores de:</span></p><p>
+            <span style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif; font-size: 14px;"><br></span></p>
+        <ul >
+        <li style="color:#000034;">Responsabilidad.</li>
+        <li style="color:#000034;">Pertenencia.</li>
+        <li style="color:#000034;">Libertad.</li>
+        <li style="color:#000034;">Justicia.</li>
+        <li style="color:#000034;">Igualdad.</li>
+        <li style="color:#000034;">Honestidad</li>
+        <li style="color:#000034;">Sinergia.</li></ul><p>
+        </p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width: 100%" >
+        <p><img width="530" height="320" style="border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent;" alt="" class="art-lightbox" src="images/images_ (28).jpg">
+            <img width="530" height="300" style="border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent;" alt=""  src="images/logomorelos-2.png"><br></p>
+    </div>
+    </div>
+</div>
+</div>
+                                
+                
+
+</article>
+
+          <!---->
+           
+         </div> 
+         <div class="modal-footer" style='background:url(../images/block.png)'> 
+            <h4 style='color:#000034;'></h4>
+            <br>
+            <button type="button" class="btn btn-default"  
+               data-dismiss="modal">Cerrar
+            </button> 
+           
+         </div> 
+      </div><!-- /.modal-content --> 
+</div><!-- /.modal --> 

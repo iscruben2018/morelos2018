@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FSS_Photo_Info version="1.00">
+    <Album_Data sprite_count="0">
+    </Album_Data>
+    <Image_Data id="0" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Biblioteca (2).jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="1" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Biblioteca (3).jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="2" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Biblioteca (4).jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="3" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Biblioteca.jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="4" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Cancha deportiva.jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="5" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Cancha.jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="6" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Centro de cómputo (2).jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="7" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Centro de cómputo (3).jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="8" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Centro de cómputo.jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="9" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Control Escolar (2).jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="10" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Control Escolar.jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="11" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Dirección.jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="12" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\images_ (19).jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="13" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Laboratorio (2).jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="14" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Laboratorio (3).jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="15" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Laboratorio.jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="16" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Recursos Humanos.jpg</File_Name>
+    </Image_Data>
+    <Image_Data id="17" angle="0" sprite_count="0">
+        <File_Name>C:\AppServ\www\morelosjuniook\images\slideshow\Trabajo Social.jpg</File_Name>
+    </Image_Data>
+</FSS_Photo_Info>

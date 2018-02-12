@@ -1,0 +1,93 @@
+<html>
+<head>
+  <!--BOOTSTRAP--> 
+    <link href="../../../css/bootstrap/bootstrap.min.css" rel="stylesheet"> 
+    <script src="../../../js/bootstrap/bootstrap.min.js"></script> 
+    <!--FIN BOOTSTRAP-->
+
+
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function aleatorio(min,max){
+	var numPosibilidades=max-min;
+	var aleatorio=Math.random()*numPosibilidades;
+	aleatorio=Math.round(aleatorio);
+
+	return parseInt(min)+aleatorio;
+
+}
+function carga(){
+	
+contador_s =0;
+contador_m =0;
+
+s = document.getElementById("segundos");
+m = document.getElementById("minutos");
+carga= document.getElementById("carga");
+botonno= document.getElementById("botonRegresa");
+botonno.innerHTML='<b>Espera un momento...</b>';
+
+cronometro = setInterval(
+function(){
+
+if(contador_s==1000){
+contador_s=0;
+contador_m=contador_m+5;
+m.value = contador_m;
+
+if(contador_m==1000){
+contador_m=0;
+}
+            
+}
+s.value = contador_s;
+var loading=s.value;
+carga.innerHTML=s.value+"%";
+carga.style.width=""+loading+"%";
+
+var random=aleatorio(1,10);
+
+contador_s=contador_s+random;
+
+if(s.value>=100){
+clearInterval(cronometro);
+jQuery.fancybox.close();
+$("#fancybox-manual-c").eq(0).trigger('click');
+}
+
+}
+,1000);
+
+}
+carga();
+function detener(intervalo){
+	clearInterval(intervalo);
+}
+</script>
+	<div id='carga_main' style='width:620px;height:240px;'>
+<h1 align=center class='titulos'>
+G<span style='color:white;text-transform:uppercase;font-weigth:bold;'>aleria de imagenes</span> <img src="../../../images/iconos/picture-2.png" width="80" height="80">
+</h3>
+<br>
+Cargando galer&iacute;a...
+<img src='../../../images/loading.gif' >
+<br>
+<div class='progress progress-striped active' style='float:relative;'> 
+<div id='carga' class='progress-bar progress-bar-info' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 10%;'> 
+<span class='sr-only'>10% Completo</span> </div> 
+</div>
+<input type='hidden' id='minutos' readonly value='0'>
+<input type='hidden' id='segundos' value='0'>
+
+
+<div id='botonRegresa'>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* Created by Artisteer v4.3.0.60745 */
+
+.dw-header, #dw-header-bg, .dw-layout-cell, .dw-layout-wrapper, .dw-footer, .dw-nav, #dw-hmenu-bg, .dw-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.dw-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.dw-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#dw-header-bg 
+{
+   display: none;
+}
+
+.dw-hmenu>li, .dw-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.dw-hmenu, ul.dw-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#dw-hmenu-bg 
+{
+   display: none;
+}
+
+ul.dw-hmenu>li:first-child {
+   padding-right:6px;
+}
+
+ul.dw-hmenu ul{
+   background-color: rgba(20, 5, 81, 0.8) !important;
+}
+
+.dw-content-layout, .dw-content-layout-row, .dw-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.dw-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.dw-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.dw-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.dw-search>input[type="text"] 
+{
+   margin :0;
+}
+
+form.dw-search
+{
+   zoom: 1;
+}
+ul.dw-vmenu, ul.dw-vmenu ul, ul.dw-vmenu li{
+   zoom: 1;
+}
+
+ul.dw-vmenu ul 
+{
+}
+
+.dw-postmetadataheader{
+   zoom:1;
+}
+
+.dw-postheadericons span{
+   zoom: 1;
+}
+.dw-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.dw-sidebar1 
+{
+   width: auto;
+   float:none;
+   background: none !important;
+   border: none !important;
+   zoom:expression(runtimeStyle.zoom=1, parentNode.parentNode.insertBefore(document.createElement('div'),parentNode.parentNode.firstChild).className='dw-sidebar1-bg' + (className.indexOf('dw-sidebar1-fix') == -1 ? '' : ' dw-sidebar1-bg-fix' ));
+}
+
+.dw-sidebar1-bg 
+{
+   border-left:1px solid #B9C7D5;
+   position:absolute;
+   z-index:-2;
+   direction: ltr;
+   right:  0;
+   bottom:0;
+   top:0;
+   width: 250px;
+   overflow:hidden;
+   display:block;
+   background-color: #FFFFFF;
+}
+

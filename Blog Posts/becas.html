@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es-MX"><head>
+    <meta charset="utf-8">
+    <title>Becas 2016</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="../style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="../style.responsive.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif&amp;subset=latin">
+
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="../jquery.js"></script>
+    <script src="../script.js"></script>
+    <script src="../script.responsive.js"></script>
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.themeSlider) {
+        $(".art-slidecontainerDSC01891").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            inner.children().filter("script").remove();
+            var helper = null;
+            
+            if ($.support.themeTransition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.themeTransition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slideDSC018910": {
+    "bgimage" : "url('../images/slideDSC018910.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideDSC018911": {
+    "bgimage" : "url('../images/slideDSC018911.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideDSC018912": {
+    "bgimage" : "url('../images/slideDSC018912.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideDSC018913": {
+    "bgimage" : "url('../images/slideDSC018913.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideDSC018914": {
+    "bgimage" : "url('../images/slideDSC018914.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideDSC018915": {
+    "bgimage" : "url('../images/slideDSC018915.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideDSC018916": {
+    "bgimage" : "url('../images/slideDSC018916.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideDSC018917": {
+    "bgimage" : "url('../images/slideDSC018917.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.themeSlider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatorDSC01891"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>.art-slidecontainerDSC01891 {
+    position: relative;
+        width: 200px;
+    height: 267px;
+        }
+
+.default-responsive .art-header .art-slidecontainerDSC01891,
+.responsive .art-header .art-slidecontainerDSC01891
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainerDSC01891 {
+  position: absolute !important;
+}
+
+.art-slidecontainerDSC01891 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainerDSC01891 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainerDSC01891 .active, .art-slidecontainerDSC01891 .next, .art-slidecontainerDSC01891 .prev {
+    display: block;
+}
+
+.art-slidecontainerDSC01891 .active {
+    opacity: 1;
+}
+
+.art-slidecontainerDSC01891 .next, .art-slidecontainerDSC01891 .prev {
+    width: 100%;
+}
+
+.art-slidecontainerDSC01891 .next.forward, .art-slidecontainerDSC01891 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainerDSC01891 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainerDSC01891 .active.back {
+    opacity: 0;
+}
+
+
+.art-slideDSC018910 {
+    background-image:  url('../images/slideDSC018910.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideDSC018910 {
+    background-image:  url('../images/slideDSC018910.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideDSC018910 {
+    background-image:  url('../images/slideDSC018910.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideDSC018910 {
+    background-image: url('../images/slideDSC018910.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideDSC018910 {
+    background-image: url('../images/slideDSC018910.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideDSC018911 {
+    background-image:  url('../images/slideDSC018911.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideDSC018911 {
+    background-image:  url('../images/slideDSC018911.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideDSC018911 {
+    background-image:  url('../images/slideDSC018911.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideDSC018911 {
+    background-image: url('../images/slideDSC018911.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideDSC018911 {
+    background-image: url('../images/slideDSC018911.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideDSC018912 {
+    background-image:  url('../images/slideDSC018912.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideDSC018912 {
+    background-image:  url('../images/slideDSC018912.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideDSC018912 {
+    background-image:  url('../images/slideDSC018912.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideDSC018912 {
+    background-image: url('../images/slideDSC018912.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideDSC018912 {
+    background-image: url('../images/slideDSC018912.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideDSC018913 {
+    background-image:  url('../images/slideDSC018913.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideDSC018913 {
+    background-image:  url('../images/slideDSC018913.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideDSC018913 {
+    background-image:  url('../images/slideDSC018913.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideDSC018913 {
+    background-image: url('../images/slideDSC018913.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideDSC018913 {
+    background-image: url('../images/slideDSC018913.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideDSC018914 {
+    background-image:  url('../images/slideDSC018914.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideDSC018914 {
+    background-image:  url('../images/slideDSC018914.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideDSC018914 {
+    background-image:  url('../images/slideDSC018914.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideDSC018914 {
+    background-image: url('../images/slideDSC018914.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideDSC018914 {
+    background-image: url('../images/slideDSC018914.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideDSC018915 {
+    background-image:  url('../images/slideDSC018915.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideDSC018915 {
+    background-image:  url('../images/slideDSC018915.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideDSC018915 {
+    background-image:  url('../images/slideDSC018915.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideDSC018915 {
+    background-image: url('../images/slideDSC018915.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideDSC018915 {
+    background-image: url('../images/slideDSC018915.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideDSC018916 {
+    background-image:  url('../images/slideDSC018916.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideDSC018916 {
+    background-image:  url('../images/slideDSC018916.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideDSC018916 {
+    background-image:  url('../images/slideDSC018916.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideDSC018916 {
+    background-image: url('../images/slideDSC018916.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideDSC018916 {
+    background-image: url('../images/slideDSC018916.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideDSC018917 {
+    background-image:  url('../images/slideDSC018917.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideDSC018917 {
+    background-image:  url('../images/slideDSC018917.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideDSC018917 {
+    background-image:  url('../images/slideDSC018917.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideDSC018917 {
+    background-image: url('../images/slideDSC018917.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideDSC018917 {
+    background-image: url('../images/slideDSC018917.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigatorDSC01891 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 243px;
+  left: 12.5%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorDSC01891
+{
+background: #D0D6DC;background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(158, 171, 183, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(158, 171, 183, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(158, 171, 183, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(158, 171, 183, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(158, 171, 183, 0.6) 100%) no-repeat;background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(158, 171, 183, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigatorDSC01891 > a
+{
+background: #8191A2;background: #8191A2;background: #8191A2;background: #8191A2;background: #8191A2;-svg-background: #8191A2;background: #8191A2;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorDSC01891 > a.active
+{
+background: #FB7C3C;background: #FB7C3C;background: #FB7C3C;background: #FB7C3C;background: #FB7C3C;-svg-background: #FB7C3C;background: #FB7C3C;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorDSC01891 > a:hover
+{
+background: #4D6580;background: #4D6580;background: #4D6580;background: #4D6580;background: #4D6580;-svg-background: #4D6580;background: #4D6580;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style>
+
+
+</head>
+<body>
+<div id="art-main">
+<header class="art-header">
+
+    <div class="art-shapes">
+        <div class="art-textblock art-object2134142508">
+        <div class="art-object2134142508-text-container">
+        <div class="art-object2134142508-text">José Ma. Morelos<br>de Zitácuaro S.C</div>
+    </div>
+    
+</div><div class="art-textblock art-object438453684">
+        <div class="art-object438453684-text-container">
+        <div class="art-object438453684-text">Incorporada <br>a la U.M.S.N.H</div>
+    </div>
+    
+</div><div class="art-textblock art-object2030094490">
+        <div class="art-object2030094490-text-container">
+        <div class="art-object2030094490-text">Clave:<br>109-218.1 "74"</div>
+    </div>
+    
+</div>
+            </div>
+
+<h1 class="art-headline">
+    <a href="/">ESCUELA PREPARATORIA</a>
+</h1>
+<h2 class="art-slogan">"CUNA DE HÉROES,CRISOL DE PENSADORES"</h2>
+
+
+
+
+
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="../inicio.html" class="">Inicio</a></li><li><a href="../acerca-de.html" class="">Acerca de</a><ul class=""><li><a href="../acerca-de/quienes-somos.html" class="">Quienes Somos</a></li><li><a href="../acerca-de/ubicacion.html" class="">Ubicación</a></li><li><a href="../acerca-de/directorio.html" class="">Directorio</a></li><li><a href="../acerca-de/reglamento.html" class="">Reglamento</a></li></ul></li><li><a href="../preparatoria.html" class="">Preparatoria</a><ul class=""><li><a href="../preparatoria/formacion-educativa.html" class="">Formación Educativa</a></li><li><a href="../preparatoria/bachilleratos.html" class="">Bachilleratos</a><ul class=""><li><a href="../preparatoria/bachilleratos/ciencias-economico-administrativas.html" class="">Ciencias Económico-Administrativas</a></li><li><a href="../preparatoria/bachilleratos/ciencias-historico-sociales.html" class="">Ciencias Historico-Sociales</a></li><li><a href="../preparatoria/bachilleratos/ciencias-quimico-biologicas.html" class="">Ciencias Químico-Biológicas</a></li><li><a href="../preparatoria/bachilleratos/ingenieria-y-arquitectura.html" class="">Ingeniería y Arquitectura</a></li></ul></li></ul></li><li><a href="../usuarios.html" class="">Usuarios</a><ul class=""><li><a href="../usuarios/alumnos.html" class="">Alumnos</a><ul class=""><li><a href="../usuarios/alumnos/calificaciones.html" class="">Calificaciones</a></li><li><a href="../usuarios/alumnos/solicitud-reinscripcion.html" class="">Solicitud Reinscripcion</a></li><li><a href="../usuarios/alumnos/consulta-de-horario.html" class="">Consulta de Horario</a></li></ul></li><li><a href="../usuarios/futuros-estudiantes.html" class="">Futuros Estudiantes</a></li><li><a href="../usuarios/docentes.html" class="">Docentes</a><ul class=""><li><a href="../usuarios/docentes/temarios.html" class="">Temarios</a></li><li><a href="../usuarios/docentes/formatos.html" class="">Formatos</a></li></ul></li><li><a href="../usuarios/padres-de-familia.html" class="">Padres de Familia</a><ul class=""><li><a href="../usuarios/padres-de-familia/buzon.html" class="">Buzón</a></li></ul></li></ul></li><li><a href="../servicios.html" class="">Servicios</a><ul class=""><li><a href="../servicios/biblioteca.html" class="">Biblioteca</a></li><li><a href="../servicios/trabajo-social.html" class="">Trabajo Social</a></li><li><a href="../servicios/psicologia.html" class="">Psicología</a></li><li><a href="../servicios/control-escolar.html" class="">Control Escolar</a></li><li><a href="../servicios/centro-de-computo.html" class="">Centro de Cómputo</a></li><li><a href="../servicios/prefectura.html" class="">Prefectura</a></li><li><a href="../servicios/subdireccion-academica.html" class="">Subdirección Académica</a></li></ul></li><li><a href="../blog.html" class="">Blog</a><ul class=""><li><a href="../blog/noticias.html" class="">Noticias</a></li><li><a href="../blog/galeria.html" class="">Galería</a></li></ul></li></ul> 
+    </nav>
+
+                    
+</header>
+<div class="art-pageslider">
+
+     <div class="art-shapes">
+            </div>
+<div class="art-slider art-slidecontainerpageslider" data-width="1000" data-height="300">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slidepageslider0">
+
+
+</div>
+<div class="art-slide-item art-slidepageslider1">
+
+
+</div>
+<div class="art-slide-item art-slidepageslider2">
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorpageslider" data-left="0" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+</div>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <div class="art-postmetadataheader">
+                                        <h2 class="art-postheader">Becas 2016</h2>
+                                                            <div class="art-postheadericons art-metadata-icons">
+                        <span class="art-postdateicon"></span>
+                         | <span class="art-postauthoricon"> <a href="#" title="Posts by Admin">Admin</a></span>
+                         | <span class="art-postpdficon"></span>
+                         | <span class="art-postprinticon"></span>
+                         | <span class="art-postemailicon"></span>
+                                            </div>
+                                    </div>
+                                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+<div class="art-content-layout-row responsive-layout-row-1">
+<div class="art-layout-cell layout-item-0" style="width: 100%">
+<div class="image-caption-wrapper" style="float: left;">
+ <img alt="an image" style=" float: left;" class="art-lightbox" src="../images/becas_SEP_superior.jpg" width="300" height="149"></div>
+<p style="text-align: justify;">Este ciclo escolar 2016 se dio a conocer la lista de los alumnos que fueron seleccionados para recibir la beca que les fue proporcionada por el gobierno del estado de michoacán.</p>
+<p style="text-align: justify;">El pasado viernes 26 del año en curso,se dieron cita alumnos de distintos niveles educativos entre los que se incluyen:Secundaria,Preparatoria y Nivel Universitario.<!--CUT--></p>
+<p style="text-align: justify;">Cabe mencionar que este apoyo es para darles un incentivo a los jóvenes para que continuen con sus estudios y puedan seguir adelante con sus planes futuros y logren aportar sus conocimientos en futuro a su estado y pais.</p>
+</div>
+</div>
+</div></div>
+                                <div class="art-postfootericons art-metadata-icons">
+                    <span class="art-postcategoryicon">Category: No Category</span>
+                     | <span class="art-postcommentsicon"><a href="#comments" title="Comments">1 Comments »</a></span>
+                                    </div>
+                
+
+</article></div>
+                        <div class="art-layout-cell art-sidebar1"><div class="art-vmenublock clearfix">
+        <div class="art-vmenublockcontent">
+<ul class="art-vmenu"><li><a href="../inicio.html" class="">Inicio</a></li><li><a href="../acerca-de.html" class="">Acerca de</a><ul class=""><li><a href="../acerca-de/quienes-somos.html" class="">Quienes Somos</a></li><li><a href="../acerca-de/ubicacion.html" class="">Ubicación</a></li><li><a href="../acerca-de/directorio.html" class="">Directorio</a></li><li><a href="../acerca-de/reglamento.html" class="">Reglamento</a></li></ul></li><li><a href="../preparatoria.html" class="">Preparatoria</a><ul class=""><li><a href="../preparatoria/formacion-educativa.html" class="">Formación Educativa</a></li><li><a href="../preparatoria/bachilleratos.html" class="">Bachilleratos</a><ul class=""><li><a href="../preparatoria/bachilleratos/ciencias-economico-administrativas.html" class="">Ciencias Económico-Administrativas</a></li><li><a href="../preparatoria/bachilleratos/ciencias-historico-sociales.html" class="">Ciencias Historico-Sociales</a></li><li><a href="../preparatoria/bachilleratos/ciencias-quimico-biologicas.html" class="">Ciencias Químico-Biológicas</a></li><li><a href="../preparatoria/bachilleratos/ingenieria-y-arquitectura.html" class="">Ingeniería y Arquitectura</a></li></ul></li></ul></li><li><a href="../usuarios.html" class="">Usuarios</a><ul class=""><li><a href="../usuarios/alumnos.html" class="">Alumnos</a><ul class=""><li><a href="../usuarios/alumnos/calificaciones.html" class="">Calificaciones</a></li><li><a href="../usuarios/alumnos/solicitud-reinscripcion.html" class="">Solicitud Reinscripcion</a></li><li><a href="../usuarios/alumnos/consulta-de-horario.html" class="">Consulta de Horario</a></li></ul></li><li><a href="../usuarios/futuros-estudiantes.html" class="">Futuros Estudiantes</a></li><li><a href="../usuarios/docentes.html" class="">Docentes</a><ul class=""><li><a href="../usuarios/docentes/temarios.html" class="">Temarios</a></li><li><a href="../usuarios/docentes/formatos.html" class="">Formatos</a></li></ul></li><li><a href="../usuarios/padres-de-familia.html" class="">Padres de Familia</a><ul class=""><li><a href="../usuarios/padres-de-familia/buzon.html" class="">Buzón</a></li><li><a href="../usuarios/padres-de-familia/index.html" class="">index</a></li></ul></li></ul></li><li><a href="../servicios.html" class="">Servicios</a><ul class=""><li><a href="../servicios/biblioteca.html" class="">Biblioteca</a></li><li><a href="../servicios/trabajo-social.html" class="">Trabajo Social</a></li><li><a href="../servicios/psicologia.html" class="">Psicología</a></li><li><a href="../servicios/control-escolar.html" class="">Control Escolar</a></li><li><a href="../servicios/centro-de-computo.html" class="">Centro de Cómputo</a></li><li><a href="../servicios/prefectura.html" class="">Prefectura</a></li><li><a href="../servicios/subdireccion-academica.html" class="">Subdirección Académica</a></li></ul></li><li><a href="../blog.html" class="">Blog</a><ul class=""><li><a href="../blog/noticias.html" class="">Noticias</a></li><li><a href="../blog/galeria.html" class="">Galería</a></li></ul></li></ul>
+                
+        </div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">GALERIA</h3>
+        </div>
+        <div class="art-blockcontent"><form method="post" action=""><p></p><div id="DSC01891" style="position: relative; display: inline-block; z-index: 0; margin-top: 5px; margin-right: 15px; margin-bottom: 0px; margin-left: 0px;  border-style: solid; border-color: transparent; border-width: 1px;  float: left;" class="art-collage">
+<div class="art-slider art-slidecontainerDSC01891" data-width="200" data-height="267">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideDSC018910" >
+
+
+</div>
+<div class="art-slide-item art-slideDSC018911" >
+
+
+</div>
+<div class="art-slide-item art-slideDSC018912" >
+
+
+</div>
+<div class="art-slide-item art-slideDSC018913" >
+
+
+</div>
+<div class="art-slide-item art-slideDSC018914" >
+
+
+</div>
+<div class="art-slide-item art-slideDSC018915" >
+
+
+</div>
+<div class="art-slide-item art-slideDSC018916" >
+
+
+</div>
+<div class="art-slide-item art-slideDSC018917" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorDSC01891" data-left="0.6944444" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><span style="font-weight: bold;"><br></span></p><p style="text-align: justify;"><span style="color: rgb(69, 91, 115); font-size: 12px; font-weight: bold; white-space: pre; text-decoration: underline;"><br></span></p><p style="text-align: justify;"><span style="color: rgb(69, 91, 115); font-size: 12px; font-weight: bold; white-space: pre; text-decoration: underline;"><br></span></p></form></div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">AGENDA</h3>
+        </div>
+        <div class="art-blockcontent"><table class="art-article" style="width: 100%; "><tbody><tr><td style="width: 100%; text-align: center; " colspan="7"><span style="font-weight: bold; color: #00093B; ">MAYO</span></td></tr><tr><td style="width: 15%; ">DO</td><td style="width: 15%; ">LU</td><td style="width: 14%; ">MA</td><td style="width: 14%; ">MI</td><td style="width: 14%; ">JU</td><td style="width: 14%; ">VI</td><td style="width: 14%; ">SA</td></tr><tr><td style="width: 15%; ">31</td><td style="width: 15%; ">1</td><td style="width: 14%; ">2</td><td style="width: 14%; ">3</td><td style="width: 14%; ">4</td><td style="width: 14%; ">5</td><td style="width: 14%; ">6</td></tr><tr><td style="width: 15%; ">7</td><td style="width: 15%; ">8</td><td style="width: 14%; ">9</td><td style="width: 14%; ">10</td><td style="width: 14%; ">11</td><td style="width: 14%; ">12</td><td style="width: 14%; ">13</td></tr><tr><td style="width: 15%; ">14</td><td style="width: 15%; ">15</td><td style="width: 14%; ">16</td><td style="width: 14%; ">17</td><td style="width: 14%; ">18</td><td style="width: 14%; ">19</td><td style="width: 14%; ">20</td></tr><tr><td style="width: 15%; ">21</td><td style="width: 15%; ">22</td><td style="width: 14%; ">23</td><td style="width: 14%; ">24</td><td style="width: 14%; ">25</td><td style="width: 14%; ">26</td><td style="width: 14%; ">27</td></tr><tr><td style="width: 15%; ">28</td><td style="width: 15%; ">29</td><td style="width: 14%; "><br></td><td style="width: 14%; "><br></td><td style="width: 14%; "><br></td><td style="width: 14%; "><br></td><td style="width: 14%; "><br></td></tr></tbody></table><br>
+                        
+        <p><br></p></div>
+</div></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-old-0" style="width: 33%">
+        <p><br></p>
+    </div><div class="art-layout-cell layout-item-old-0" style="width: 34%">
+        <h3><span style="text-align: justify; -webkit-border-vertical-spacing: 10px;"><b style="font-size: 13px;"><span lang="ES" style="font-size: 12pt; font-family: 'Droid Serif'; text-decoration: underline; color: #FFFFFF;"><br></span></b><span style="font-weight: normal; font-size: 13px;">&nbsp;</span> <span style="font-family: 'Times New Roman'; font-size: 16px; color: rgb(229, 73, 52);">Horario de atención:</span></span></h3><p class="MsoNormal" style="margin-top: 12px; margin-bottom: 0.0001pt; text-align: center;"><span lang="ES" style="font-family: 'Droid Serif'; color: rgb(255, 255, 255); font-size: 14px;">Lunes a Viernes de 7:30 a 16:00 Hrs.</span></p><p><br></p>
+    </div><div class="art-layout-cell layout-item-old-0" style="width: 33%">
+        <p><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout-br layout-item-0">
+</div><div class="art-content-layout-wrapper layout-item-1">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-old-0" style="width: 33%">
+        <p style="text-align: center;"><span style="font-size: 12px;">Dr. Emilio García Sur #124,H.Zitácuaro,Mich</span><br></p>
+    </div><div class="art-layout-cell layout-item-old-0" style="width: 34%">
+        <p style="text-align: center;"><span style="font-size: 12px;">Tel/Fax. 153-1364</span><br></p><p><span style="font-size: 12px;"><br></span></p>
+    </div><div class="art-layout-cell layout-item-old-0" style="width: 33%">
+        <p style="text-align: justify;"><span style="font-size: 12px;">
+         Contactanos:&nbsp;<a href="https://wwww.facebook.com/Esc-Prepa-Jose-Ma-Morelos-De-Zitacuaro-514038705306620/info/?tab=overview" class="art-facebook-tag-icon"></a>
+         &nbsp;&nbsp;<a href="" class="art-youtube-tag-icon"></a>
+         &nbsp;&nbsp;</span><br></p><p><span style="font-size: 12px;"><br></span></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-1">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-old-0" style="width: 100%">
+        <p style="text-align: center;"><span style="color: rgb(237, 240, 245); font-family: Georgia, 'Times New Roman', Times, serif; font-size: 12px; line-height: 22px;">prepamoreloszitacuaro.blogspot.com</span></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-1">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-old-0" style="width: 100%">
+        <p><span style="font-size: 12px; text-align: justify;">Correo:escjosemamorelos@hotmail.com</span><br></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-wrapper layout-item-2">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-old-0" style="width: 100%">
+        <p><span style="font-size: 12px; text-align: justify;">www.seeorientamich.org</span><br></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout-br layout-item-3">
+</div><div class="art-content-layout-wrapper layout-item-1">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-old-0" style="width: 100%">
+        <p>2016 ©|Preparatoria José Ma. Morelos de Zitácuaro S.C<span style="font-size: 12px;"><a href="www.google.com" target="_blank"><br></a><a href="www.google.com" target="_blank"></a></span></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-old-0" style="width: 100%">
+        <p style="text-align: center;">Acerca de|Politicas de Privacidad</p>
+    </div>
+    </div>
+</div>
+
+</footer>
+
+    </div>
+</div>
+
+
+</body></html>

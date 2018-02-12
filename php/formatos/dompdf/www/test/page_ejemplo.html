@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf8">
+<title>Highcharts Example</title>
+<script src="Highcharts-4.1.5/js/jquery.js"></script>
+
+
+<div id="container" style="height: 400px"></div>
+<style type="text/css">
+#container {
+	height: 400px; 
+	min-width: 310px; 
+	max-width: 800px;
+	margin: 0 auto;
+}
+		</style>
+<style>
+body {
+  margin: 18pt 18pt 24pt 18pt;
+}
+
+* {
+  font-family: helvetica,georgia,serif;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+  font-size: 1em;
+  margin: 0.5em;
+  padding: 10px;
+}
+</style>
+
+ <script type="text/javascript">
+$(function () {
+    // Set up the chart
+    var chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container',
+            type: 'column',
+            margin: 75,
+            options3d: {
+                enabled: true,
+                alpha: 15,
+                beta: 15,
+                depth: 50,
+                viewDistance: 25
+            }
+        },
+        title: {
+            text: 'Chart rotation demo'
+        },
+        subtitle: {
+            text: 'Test options by dragging the sliders below'
+        },
+        plotOptions: {
+            column: {
+                depth: 25
+            }
+        },
+        series: [{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+        }]
+    });
+
+    function showValues() {
+        $('#R0-value').html(chart.options.chart.options3d.alpha);
+        $('#R1-value').html(chart.options.chart.options3d.beta);
+    }
+
+    // Activate the sliders
+    $('#R0').on('change', function () {
+        chart.options.chart.options3d.alpha = this.value;
+        showValues();
+        chart.redraw(false);
+    });
+    $('#R1').on('change', function () {
+        chart.options.chart.options3d.beta = this.value;
+        showValues();
+        chart.redraw(false);
+    });
+
+    showValues();
+});
+		</script>         
+	</head>
+</head>
+<body>
+
+<script type="text/php">
+
+if ( isset($pdf) ) {
+
+  $font = Font_Metrics::get_font("verdana");;
+  $size = 6;
+  $color = array(0,0,0);
+  $text_height = Font_Metrics::get_font_height($font, $size);
+
+  $foot = $pdf->open_object();
+  
+  $w = $pdf->get_width();
+  $h = $pdf->get_height();
+
+  // Draw a line along the bottom
+  $y = $h - $text_height - 24;
+  $pdf->line(16, $y, $w - 16, $y, $color, 0.5);
+
+  $pdf->close_object();
+  $pdf->add_object($foot, "all");
+
+  $text = "Page {PAGE_NUM} of {PAGE_COUNT}";  
+
+  // Center the text
+  $width = Font_Metrics::get_text_width("Page 1 of 2", $font, $size);
+  $pdf->page_text($w / 2 - $width / 2, $y, $text, $font, $size, $color);
+  
+}
+</script>
+
+
+<h1>Ejemplo Grafica:<p>
+<div id="container" style="height: 400px"></div>
+
+</p></h1>
+<p>
+<script src="Highcharts-4.1.5/js/highcharts.js"></script>
+<script src="Highcharts-4.1.5/js/highcharts-3d.js"></script>
+<script src="Highcharts-4.1.5/js/modules/exporting.js"></script>
+
+
+</p>
+
+</body> </html>
