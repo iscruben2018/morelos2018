@@ -1,3 +1,2 @@
-hola es una prueba
-final ya me equivoque
-final ya me quivoque enserio
+console.log("zzzz");
+echo "ZZZ";
